@@ -1,0 +1,1399 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		03E783DA3BB50E234F5223487D25A68F /* Nimble.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B18E7081A54895D2CFCE2A46255226F1 /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		05CFDD6C11659B37D9C951B8E6D0436F /* GemCommonsKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 62CF698FAB62F139FFB3BAFCF25E15C9 /* GemCommonsKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1232460E75F9D03066661B650CFF28E4 /* CardReaderControllerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE3B6828DD0828DB44E63E3B6A4DBF43 /* CardReaderControllerManager.swift */; };
+		12FE43478F9B271D71E8D09F442BCEF8 /* GemCommonsKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 62CF698FAB62F139FFB3BAFCF25E15C9 /* GemCommonsKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		156FEED46D1393465B94C2D540F24A35 /* GemCommonsKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62CF698FAB62F139FFB3BAFCF25E15C9 /* GemCommonsKit.framework */; };
+		1B5BD0AA89FE86AB1EF8CAA1FB49F35F /* GemCommonsKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EA02D9875D15F87C785817A40FAA974 /* GemCommonsKit.framework */; };
+		1C23276F223B3A9BA02A49B975B99B8E /* CommandTypeExtLogicChannelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A98787EBCC5E9EC4B541638D4EF621 /* CommandTypeExtLogicChannelTests.swift */; };
+		1CE2E7FDAFCB7C23E0E00681AE643DD0 /* GemCommonsKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9EA02D9875D15F87C785817A40FAA974 /* GemCommonsKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1D665D8C8BD3BA850DE02601B05BA77F /* APDUResponseTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A237EA7A9A78A6A17029D1BF091DB5F /* APDUResponseTest.swift */; };
+		1E087C119CAB2F3824CDB5BE6667E02B /* APDUCommandTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185E0D29CD2A319E8628D0F680BD6088 /* APDUCommandTest.swift */; };
+		1E27A3D4E64304B6F4226888E341C0FD /* Resources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F1470286F2F829A80996DA5198A7EB4D /* Resources.bundle */; };
+		1EBD5072EC1E65E3AE436CDEC98608CF /* SwiftExtReflectionTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B8DC8AA4D2FD4D87C99959DF08FDCD4 /* SwiftExtReflectionTest.swift */; };
+		1FA98C1BEFDFA9187C4344016630C42C /* CardReaderProviderApi.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0809C6DF8A86E19D37D867036DA34DAE /* CardReaderProviderApi.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		22D7B7F66036FC9A023CBABEE3546FB2 /* CardReaderTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BDBEEA608801CCA8C273E01CA1E4DA4 /* CardReaderTest.swift */; };
+		26E04B9A86A5B22F8ED2A8D0D0F67DDC /* CardProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E8BA4706DFF46FD56CF92E1111D248 /* CardProtocol.swift */; };
+		275CB06A9B3F503788F90DE5493864E0 /* CardReaderControllerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE3B6828DD0828DB44E63E3B6A4DBF43 /* CardReaderControllerManager.swift */; };
+		293046457AB1C4767E25EF17B3FA856E /* CardReaderProviderApi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0809C6DF8A86E19D37D867036DA34DAE /* CardReaderProviderApi.framework */; };
+		2C28E95D7627EDEDC72BD76CEEC292DD /* ResponseType+APDU.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA7B172F53F78A4D879B4B96A2F5FCB /* ResponseType+APDU.swift */; };
+		2ED736342968AD5C5788AA9C059F9DD2 /* APDUResponseTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A237EA7A9A78A6A17029D1BF091DB5F /* APDUResponseTest.swift */; };
+		2EE77FA198D6E52D299C1B059DA0E609 /* GemCommonsKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EA02D9875D15F87C785817A40FAA974 /* GemCommonsKit.framework */; };
+		2F690AB14A96E7B5226B68E5B9151CBB /* CommandTypeExtLogicChannelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A98787EBCC5E9EC4B541638D4EF621 /* CommandTypeExtLogicChannelTests.swift */; };
+		314EC68E167E1D58FC425CF4A8AF10BD /* CardReaderProviderType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F6D8A55D94515A84DA3E8CA6744F85 /* CardReaderProviderType.swift */; };
+		38F728FFFBB6AF70EEB13231E2CEDBDF /* CardReaderAccess.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92CAA3B3E320F7E49D302396D2955932 /* CardReaderAccess.framework */; };
+		3C96A651E8DFFCFB16D3B96A078242CF /* CardReaderProviderApi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0809C6DF8A86E19D37D867036DA34DAE /* CardReaderProviderApi.framework */; };
+		45F965803F15B804E5E1E85DE691A38A /* CardReaderProviderApi.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0809C6DF8A86E19D37D867036DA34DAE /* CardReaderProviderApi.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		4747637A4B773FC9E5FD777DDBA1AD8A /* Resources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F1470286F2F829A80996DA5198A7EB4D /* Resources.bundle */; };
+		4963DC83BEFA2A9060B91D3A359D438F /* CardReaderControllerManagerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DADD0CA0E4EA25DB0940E1891D0D8DB3 /* CardReaderControllerManagerTest.swift */; };
+		49AEE0A4D0C0779BE04F311B0422A178 /* CardType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29806EA9F2D2C7343106F11773D3B39C /* CardType.swift */; };
+		4A2C1C0C2D2825BDEB6CF8A24E465B1B /* XCTestManifests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5011B2B294DA7BCB60AED242490954D /* XCTestManifests.swift */; };
+		4C81C685337E14FAE7E7B39315295022 /* XCTestManifests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A4BFAF4E614F346E63D45478B10B82B /* XCTestManifests.swift */; };
+		57839698FCFD7ED0DC767A8E796FB187 /* CardReaderProviderApi.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AA130FD7E21219812043D3DD0DB6DFBA /* CardReaderProviderApi.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5899C5B36FB9ED6392557FAFE94F7C0F /* CommandType+APDU.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB91D6311EC8E43B87B741666CA6856 /* CommandType+APDU.swift */; };
+		5B8E0C8564868C45F550F3EA96CE967E /* APDU.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC5EE20D758F157BDDA26D8E76C6811 /* APDU.swift */; };
+		630EB133B3EC4E9A7D727B3670C73EC5 /* APDUCommandTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185E0D29CD2A319E8628D0F680BD6088 /* APDUCommandTest.swift */; };
+		63ECB17D66ABC51CE00BB5756DA62AE9 /* CardReaderControllerManagerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DADD0CA0E4EA25DB0940E1891D0D8DB3 /* CardReaderControllerManagerTest.swift */; };
+		651588C6C061344986C9112148E36D73 /* Swift+Reflection.swift in Sources */ = {isa = PBXBuildFile; fileRef = C137F213B22BB7D80DA52349317C6D5F /* Swift+Reflection.swift */; };
+		652038650BA9BE0EAED72D9CFF678D87 /* CardReaderControllerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5480EA10FD0ABA9F685EA15B977FA3BA /* CardReaderControllerType.swift */; };
+		6608F0EA87BA3100F99C25E8B1E38446 /* XCTestManifests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5011B2B294DA7BCB60AED242490954D /* XCTestManifests.swift */; };
+		67F96B2412470AB36E2DF26B397F6561 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B18E7081A54895D2CFCE2A46255226F1 /* Nimble.framework */; };
+		680E8B7AABBF1EAA28DA6E014609C573 /* CardError.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F4E7E137DDFBFFAC256203A98F31F4 /* CardError.swift */; };
+		6958FE8E1B25F8BEA6B6297C19F7969C /* CardReaderAccess.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 92CAA3B3E320F7E49D302396D2955932 /* CardReaderAccess.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6A1B3DE9A376109D0DEDB539C731F026 /* Nimble.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8828BB626C3D3521ECC8AB41AC6CBB25 /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		72273C8DBE849AC5C6F793CE738BC747 /* ResponseType+APDU.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA7B172F53F78A4D879B4B96A2F5FCB /* ResponseType+APDU.swift */; };
+		776011D85B4B1040336D4A87D67456B4 /* CommandType+APDU.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB91D6311EC8E43B87B741666CA6856 /* CommandType+APDU.swift */; };
+		7AD31377A1604995B94B60662D4956BE /* CardReaderTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BDBEEA608801CCA8C273E01CA1E4DA4 /* CardReaderTest.swift */; };
+		842A0D440CD3DA2E0D9B23F826D91A43 /* ResponseType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 135A9E424EF044219C314665753E3FE5 /* ResponseType.swift */; };
+		8457A822AB84794FB7F333DE8A40D16F /* ProviderDescriptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4339EC85A3AFDAA4687500299301A07 /* ProviderDescriptor.swift */; };
+		87EBC420FF7C45F7740C1787F5658C05 /* ProviderDescriptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4339EC85A3AFDAA4687500299301A07 /* ProviderDescriptor.swift */; };
+		8CF477453BFB5527D1CE6C5B943F9C68 /* ProviderDescriptorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BF28C1072D851FB671628228C47F412 /* ProviderDescriptorType.swift */; };
+		924CEB1E5EDCB650D0954D34211DB1EA /* ProviderDescriptorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BF28C1072D851FB671628228C47F412 /* ProviderDescriptorType.swift */; };
+		997212630B0CA48A866C8A955FAF602C /* CommandType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10572F5711EC4B7B2CBBECD8CDB23A53 /* CommandType.swift */; };
+		99BD53C42A894CB679848665404FEE92 /* Nimble.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B18E7081A54895D2CFCE2A46255226F1 /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9AE50AC4C6541F8FCAB42293DA8B92F5 /* CardChannelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F919F9B4B67E5156A8CBDA8888B61737 /* CardChannelType.swift */; };
+		AA571A206979E9236FFD0A9556A94F56 /* CommandType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10572F5711EC4B7B2CBBECD8CDB23A53 /* CommandType.swift */; };
+		AB9CCF0B514CF736B75ECA4C248F73EB /* CardReaderProviderApi.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AA130FD7E21219812043D3DD0DB6DFBA /* CardReaderProviderApi.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		AC72797E99A6FF95E130D435E3B41895 /* Nimble.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8828BB626C3D3521ECC8AB41AC6CBB25 /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		AD22F4E03A2F4F7A68C7E9EDCA0604FE /* CardProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E8BA4706DFF46FD56CF92E1111D248 /* CardProtocol.swift */; };
+		B2AB9545FCB016AB92C91BE6083F31BE /* CardReaderProviderApi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA130FD7E21219812043D3DD0DB6DFBA /* CardReaderProviderApi.framework */; };
+		B38290CB9A94B16C0CCFA8CD19C1A1D8 /* CardReaderType.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5F75E4937BE7C851716B7688C0F81B /* CardReaderType.swift */; };
+		BE6DEE30DB528E109ADCCA4C721A9808 /* CommandType+LogicChannel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34004B98454EF3210672BA65253536FD /* CommandType+LogicChannel.swift */; };
+		BFFBFE2DD90AB763AAB205F03D4A676E /* ResponseType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 135A9E424EF044219C314665753E3FE5 /* ResponseType.swift */; };
+		C072B5462199A89131C6DB59BD8955F7 /* SwiftExtReflectionTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B8DC8AA4D2FD4D87C99959DF08FDCD4 /* SwiftExtReflectionTest.swift */; };
+		C4E52BA97BBAF51CF1D55ECEC4FB2395 /* CardReaderType.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5F75E4937BE7C851716B7688C0F81B /* CardReaderType.swift */; };
+		C68BA8DAADF3857F5AC09549F7BA0D13 /* APDU.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC5EE20D758F157BDDA26D8E76C6811 /* APDU.swift */; };
+		C73E20804B12F687970F6CCF3C0B60B8 /* GemCommonsKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62CF698FAB62F139FFB3BAFCF25E15C9 /* GemCommonsKit.framework */; };
+		CA40B38729B1C146233BC18C8AB10664 /* CardChannelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F919F9B4B67E5156A8CBDA8888B61737 /* CardChannelType.swift */; };
+		CA4C413CE10C768B8E48922AC71ACCC1 /* XCTestManifests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A4BFAF4E614F346E63D45478B10B82B /* XCTestManifests.swift */; };
+		CFE446E98DA6C58693F77FCBF9BCB541 /* CardReaderAccess.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20C99D970517EC0D66E0B122A290D777 /* CardReaderAccess.framework */; };
+		D0E90200887C1A796B191D1F9BB4CA2E /* CardReaderProviderApi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA130FD7E21219812043D3DD0DB6DFBA /* CardReaderProviderApi.framework */; };
+		D1FF4549FDA0BA786EDAF671306B5D87 /* CardReaderAccess.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 20C99D970517EC0D66E0B122A290D777 /* CardReaderAccess.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D3F7695F1017C6F2D9B22D0D7B0B9B78 /* CardReaderProviderApi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA130FD7E21219812043D3DD0DB6DFBA /* CardReaderProviderApi.framework */; };
+		D607CE9B3EEA771237E7992DEC2859C2 /* CardError.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F4E7E137DDFBFFAC256203A98F31F4 /* CardError.swift */; };
+		D70E09176E8F666AC76488AE8D749428 /* CardReaderProviderApi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0809C6DF8A86E19D37D867036DA34DAE /* CardReaderProviderApi.framework */; };
+		D7B966562C378B1ACE34D438DA97FB48 /* GemCommonsKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9EA02D9875D15F87C785817A40FAA974 /* GemCommonsKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DAD2F922A97B41E8247BDF4DF440EC9E /* CardReaderProviderType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F6D8A55D94515A84DA3E8CA6744F85 /* CardReaderProviderType.swift */; };
+		E148E9B235A6A657413C84014A9DE2F6 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8828BB626C3D3521ECC8AB41AC6CBB25 /* Nimble.framework */; };
+		E8CA8AAE786F916F16A3979B5F43A481 /* Swift+Reflection.swift in Sources */ = {isa = PBXBuildFile; fileRef = C137F213B22BB7D80DA52349317C6D5F /* Swift+Reflection.swift */; };
+		ED429186C62BCB4B2DA697604861B924 /* CardType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29806EA9F2D2C7343106F11773D3B39C /* CardType.swift */; };
+		EDF4C3AC5D50FAE49154655CDF024037 /* CommandType+LogicChannel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34004B98454EF3210672BA65253536FD /* CommandType+LogicChannel.swift */; };
+		F395BC207776ACE995E5B017F1C6B759 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B18E7081A54895D2CFCE2A46255226F1 /* Nimble.framework */; };
+		F68741C257AFFE412A5259BBBB0B41DD /* CardReaderControllerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5480EA10FD0ABA9F685EA15B977FA3BA /* CardReaderControllerType.swift */; };
+		FDC5E391D69031FE0AA917F0F62571C9 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8828BB626C3D3521ECC8AB41AC6CBB25 /* Nimble.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		12E7DCD76EB659348046B70D2BAC1A58 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E63EE4FCAFA7E1441FAB4786526175D0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9AE3E75E73F8104274587B8DEEA8D2F7;
+			remoteInfo = CardReaderAccess_iOS;
+		};
+		41FD5408BD29E2377E6BB06B155AD15B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E63EE4FCAFA7E1441FAB4786526175D0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 965FDB85EDB207DFCC3FB2FDFCA48A36;
+			remoteInfo = CardReaderProviderApi_iOS;
+		};
+		4E4CAFFB33A8C34DE7FCC6965D5F1D98 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E63EE4FCAFA7E1441FAB4786526175D0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8629E5156A99460CD40ADC24301F0F98;
+			remoteInfo = CardReaderProviderApi_macOS;
+		};
+		63CE0351A268699850A3959B43F6EB93 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E63EE4FCAFA7E1441FAB4786526175D0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4E4C855370629E8BDEA07A706845A1C0;
+			remoteInfo = CardReaderAccess_macOS;
+		};
+		6D9A4EA507005B73AD1C7E5F9EC7857B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E63EE4FCAFA7E1441FAB4786526175D0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 965FDB85EDB207DFCC3FB2FDFCA48A36;
+			remoteInfo = CardReaderProviderApi_iOS;
+		};
+		7003AA37CDEB177ED7ED27EBFC0E416B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E63EE4FCAFA7E1441FAB4786526175D0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8629E5156A99460CD40ADC24301F0F98;
+			remoteInfo = CardReaderProviderApi_macOS;
+		};
+		E8A0DE14728918BA3E37BDA04374B2A6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E63EE4FCAFA7E1441FAB4786526175D0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 965FDB85EDB207DFCC3FB2FDFCA48A36;
+			remoteInfo = CardReaderProviderApi_iOS;
+		};
+		FDC9470B0BB278D2E473E3CD7DFBBBAE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E63EE4FCAFA7E1441FAB4786526175D0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8629E5156A99460CD40ADC24301F0F98;
+			remoteInfo = CardReaderProviderApi_macOS;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		6A75D8A3A76416BB65507DE41FAA4907 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				6958FE8E1B25F8BEA6B6297C19F7969C /* CardReaderAccess.framework in Embed Frameworks */,
+				AB9CCF0B514CF736B75ECA4C248F73EB /* CardReaderProviderApi.framework in Embed Frameworks */,
+				1CE2E7FDAFCB7C23E0E00681AE643DD0 /* GemCommonsKit.framework in Embed Frameworks */,
+				99BD53C42A894CB679848665404FEE92 /* Nimble.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7915BBACE4D67A734DFA8DBFAA3B2851 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				D1FF4549FDA0BA786EDAF671306B5D87 /* CardReaderAccess.framework in Embed Frameworks */,
+				45F965803F15B804E5E1E85DE691A38A /* CardReaderProviderApi.framework in Embed Frameworks */,
+				05CFDD6C11659B37D9C951B8E6D0436F /* GemCommonsKit.framework in Embed Frameworks */,
+				AC72797E99A6FF95E130D435E3B41895 /* Nimble.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8BCE9AE2A6B64C3A5F74F2BE7FC6F166 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				57839698FCFD7ED0DC767A8E796FB187 /* CardReaderProviderApi.framework in Embed Frameworks */,
+				D7B966562C378B1ACE34D438DA97FB48 /* GemCommonsKit.framework in Embed Frameworks */,
+				03E783DA3BB50E234F5223487D25A68F /* Nimble.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B46A16873BDE03DDDFB9ACBD373AF74B /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				1FA98C1BEFDFA9187C4344016630C42C /* CardReaderProviderApi.framework in Embed Frameworks */,
+				12FE43478F9B271D71E8D09F442BCEF8 /* GemCommonsKit.framework in Embed Frameworks */,
+				6A1B3DE9A376109D0DEDB539C731F026 /* Nimble.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		05F6D8A55D94515A84DA3E8CA6744F85 /* CardReaderProviderType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardReaderProviderType.swift; sourceTree = "<group>"; };
+		0809C6DF8A86E19D37D867036DA34DAE /* CardReaderProviderApi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CardReaderProviderApi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		10572F5711EC4B7B2CBBECD8CDB23A53 /* CommandType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandType.swift; sourceTree = "<group>"; };
+		135A9E424EF044219C314665753E3FE5 /* ResponseType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseType.swift; sourceTree = "<group>"; };
+		185E0D29CD2A319E8628D0F680BD6088 /* APDUCommandTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APDUCommandTest.swift; sourceTree = "<group>"; };
+		1BDBEEA608801CCA8C273E01CA1E4DA4 /* CardReaderTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardReaderTest.swift; sourceTree = "<group>"; };
+		20C99D970517EC0D66E0B122A290D777 /* CardReaderAccess.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CardReaderAccess.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		29806EA9F2D2C7343106F11773D3B39C /* CardType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardType.swift; sourceTree = "<group>"; };
+		2BF28C1072D851FB671628228C47F412 /* ProviderDescriptorType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProviderDescriptorType.swift; sourceTree = "<group>"; };
+		34004B98454EF3210672BA65253536FD /* CommandType+LogicChannel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CommandType+LogicChannel.swift"; sourceTree = "<group>"; };
+		45A98787EBCC5E9EC4B541638D4EF621 /* CommandTypeExtLogicChannelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandTypeExtLogicChannelTests.swift; sourceTree = "<group>"; };
+		4CA7B172F53F78A4D879B4B96A2F5FCB /* ResponseType+APDU.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ResponseType+APDU.swift"; sourceTree = "<group>"; };
+		518D513C13341A57E5917172E3ED8B3E /* CardReaderAccessTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CardReaderAccessTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5480EA10FD0ABA9F685EA15B977FA3BA /* CardReaderControllerType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardReaderControllerType.swift; sourceTree = "<group>"; };
+		5A4BFAF4E614F346E63D45478B10B82B /* XCTestManifests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCTestManifests.swift; sourceTree = "<group>"; };
+		5B8DC8AA4D2FD4D87C99959DF08FDCD4 /* SwiftExtReflectionTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftExtReflectionTest.swift; sourceTree = "<group>"; };
+		5BB91D6311EC8E43B87B741666CA6856 /* CommandType+APDU.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CommandType+APDU.swift"; sourceTree = "<group>"; };
+		62CF698FAB62F139FFB3BAFCF25E15C9 /* GemCommonsKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GemCommonsKit.framework; sourceTree = "<group>"; };
+		7DC8BC2602FEC7ACDB0014908B432656 /* CardReaderProviderApiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CardReaderProviderApiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		87E8BA4706DFF46FD56CF92E1111D248 /* CardProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardProtocol.swift; sourceTree = "<group>"; };
+		8828BB626C3D3521ECC8AB41AC6CBB25 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Nimble.framework; sourceTree = "<group>"; };
+		92CAA3B3E320F7E49D302396D2955932 /* CardReaderAccess.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CardReaderAccess.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A237EA7A9A78A6A17029D1BF091DB5F /* APDUResponseTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APDUResponseTest.swift; sourceTree = "<group>"; };
+		9EA02D9875D15F87C785817A40FAA974 /* GemCommonsKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GemCommonsKit.framework; sourceTree = "<group>"; };
+		A4339EC85A3AFDAA4687500299301A07 /* ProviderDescriptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProviderDescriptor.swift; sourceTree = "<group>"; };
+		AA130FD7E21219812043D3DD0DB6DFBA /* CardReaderProviderApi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CardReaderProviderApi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC9D8E97ED50240015DA9F89A29C8CB3 /* CardReaderAccessTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = CardReaderAccessTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE3B6828DD0828DB44E63E3B6A4DBF43 /* CardReaderControllerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardReaderControllerManager.swift; sourceTree = "<group>"; };
+		B18E7081A54895D2CFCE2A46255226F1 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Nimble.framework; sourceTree = "<group>"; };
+		C047FE6449C7964CF0BBF2D7DEBE0136 /* CardReaderProviderApiTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = CardReaderProviderApiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C137F213B22BB7D80DA52349317C6D5F /* Swift+Reflection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Swift+Reflection.swift"; sourceTree = "<group>"; };
+		C5011B2B294DA7BCB60AED242490954D /* XCTestManifests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCTestManifests.swift; sourceTree = "<group>"; };
+		DADD0CA0E4EA25DB0940E1891D0D8DB3 /* CardReaderControllerManagerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardReaderControllerManagerTest.swift; sourceTree = "<group>"; };
+		DCC5EE20D758F157BDDA26D8E76C6811 /* APDU.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APDU.swift; sourceTree = "<group>"; };
+		E0F4E7E137DDFBFFAC256203A98F31F4 /* CardError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardError.swift; sourceTree = "<group>"; };
+		EA5F75E4937BE7C851716B7688C0F81B /* CardReaderType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardReaderType.swift; sourceTree = "<group>"; };
+		F1470286F2F829A80996DA5198A7EB4D /* Resources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Resources.bundle; sourceTree = "<group>"; };
+		F919F9B4B67E5156A8CBDA8888B61737 /* CardChannelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardChannelType.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		19A8493DD5EE4D1C95FAD5B613A66943 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2EE77FA198D6E52D299C1B059DA0E609 /* GemCommonsKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		30199CDAE106D1E4726A528DFDBECCB4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C73E20804B12F687970F6CCF3C0B60B8 /* GemCommonsKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		35E9081355FFF3AC558B1CF67B0B29E4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				38F728FFFBB6AF70EEB13231E2CEDBDF /* CardReaderAccess.framework in Frameworks */,
+				B2AB9545FCB016AB92C91BE6083F31BE /* CardReaderProviderApi.framework in Frameworks */,
+				67F96B2412470AB36E2DF26B397F6561 /* Nimble.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		58D26175D27495549455676C90A35037 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D70E09176E8F666AC76488AE8D749428 /* CardReaderProviderApi.framework in Frameworks */,
+				156FEED46D1393465B94C2D540F24A35 /* GemCommonsKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6361FEB8BAD5CC6EE53D994C1A095BCD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0E90200887C1A796B191D1F9BB4CA2E /* CardReaderProviderApi.framework in Frameworks */,
+				F395BC207776ACE995E5B017F1C6B759 /* Nimble.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		76765890EC4A514B750EF207AA39DFB4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3F7695F1017C6F2D9B22D0D7B0B9B78 /* CardReaderProviderApi.framework in Frameworks */,
+				1B5BD0AA89FE86AB1EF8CAA1FB49F35F /* GemCommonsKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7F4E2357AF8E2F2A74BB4499A5DCEF1B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFE446E98DA6C58693F77FCBF9BCB541 /* CardReaderAccess.framework in Frameworks */,
+				3C96A651E8DFFCFB16D3B96A078242CF /* CardReaderProviderApi.framework in Frameworks */,
+				E148E9B235A6A657413C84014A9DE2F6 /* Nimble.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C7B84C7F93FDA39CFED2B0A9F2EFA408 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				293046457AB1C4767E25EF17B3FA856E /* CardReaderProviderApi.framework in Frameworks */,
+				FDC5E391D69031FE0AA917F0F62571C9 /* Nimble.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0D6E704012422A154F4E8A29F0FBAA8D /* Reader */ = {
+			isa = PBXGroup;
+			children = (
+				5480EA10FD0ABA9F685EA15B977FA3BA /* CardReaderControllerType.swift */,
+				EA5F75E4937BE7C851716B7688C0F81B /* CardReaderType.swift */,
+			);
+			path = Reader;
+			sourceTree = "<group>";
+		};
+		2E35E451EE0E4168A79842A0633DE317 /* Carthage */ = {
+			isa = PBXGroup;
+			children = (
+				46C673556C1D2ED143E6A63D7E327DAE /* iOS */,
+				90C1EEC5DB851A72E0582E2FA2537F8F /* Mac */,
+			);
+			name = Carthage;
+			path = Carthage/Build;
+			sourceTree = "<group>";
+		};
+		345E589FEF8A85680F28903EEB622326 /* Card */ = {
+			isa = PBXGroup;
+			children = (
+				F919F9B4B67E5156A8CBDA8888B61737 /* CardChannelType.swift */,
+				E0F4E7E137DDFBFFAC256203A98F31F4 /* CardError.swift */,
+				87E8BA4706DFF46FD56CF92E1111D248 /* CardProtocol.swift */,
+				29806EA9F2D2C7343106F11773D3B39C /* CardType.swift */,
+			);
+			path = Card;
+			sourceTree = "<group>";
+		};
+		46C673556C1D2ED143E6A63D7E327DAE /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				9EA02D9875D15F87C785817A40FAA974 /* GemCommonsKit.framework */,
+				B18E7081A54895D2CFCE2A46255226F1 /* Nimble.framework */,
+			);
+			path = iOS;
+			sourceTree = "<group>";
+		};
+		49886305BFB147353A8A2948CA90B626 /* CardReaderProviderApiTests */ = {
+			isa = PBXGroup;
+			children = (
+				C5011B2B294DA7BCB60AED242490954D /* XCTestManifests.swift */,
+				6644108F52706A63AD20B3C811699963 /* Command */,
+				71489938A6856F9A12CC1C6B9B437773 /* Reader */,
+			);
+			name = CardReaderProviderApiTests;
+			path = Tests/CardReaderProviderApiTests;
+			sourceTree = "<group>";
+		};
+		5242DD81D25309A2EF373F25755014B4 /* internal */ = {
+			isa = PBXGroup;
+			children = (
+				C137F213B22BB7D80DA52349317C6D5F /* Swift+Reflection.swift */,
+			);
+			path = internal;
+			sourceTree = "<group>";
+		};
+		628A109220D4F7CAF25F427397D54852 /* internal */ = {
+			isa = PBXGroup;
+			children = (
+				5B8DC8AA4D2FD4D87C99959DF08FDCD4 /* SwiftExtReflectionTest.swift */,
+			);
+			path = internal;
+			sourceTree = "<group>";
+		};
+		6644108F52706A63AD20B3C811699963 /* Command */ = {
+			isa = PBXGroup;
+			children = (
+				185E0D29CD2A319E8628D0F680BD6088 /* APDUCommandTest.swift */,
+				9A237EA7A9A78A6A17029D1BF091DB5F /* APDUResponseTest.swift */,
+				45A98787EBCC5E9EC4B541638D4EF621 /* CommandTypeExtLogicChannelTests.swift */,
+			);
+			path = Command;
+			sourceTree = "<group>";
+		};
+		71489938A6856F9A12CC1C6B9B437773 /* Reader */ = {
+			isa = PBXGroup;
+			children = (
+				1BDBEEA608801CCA8C273E01CA1E4DA4 /* CardReaderTest.swift */,
+			);
+			path = Reader;
+			sourceTree = "<group>";
+		};
+		7D750D81D8A9DF055CD7F2D0442A38F6 = {
+			isa = PBXGroup;
+			children = (
+				B6A183B3D178CDD18E8B650CDA30247A /* CardReaderAccess */,
+				EE6A5DB3E341D439F70456E7E6546011 /* CardReaderAccessTests */,
+				8E795A80F188FCECEEB2423E269C7F27 /* CardReaderProviderApi */,
+				49886305BFB147353A8A2948CA90B626 /* CardReaderProviderApiTests */,
+				818AE8C7E3824B62CB201DEE30616587 /* Frameworks */,
+				F46C655287488A7CB26273CAA81544BE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		818AE8C7E3824B62CB201DEE30616587 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2E35E451EE0E4168A79842A0633DE317 /* Carthage */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		89A55213339FB5289440C54045D85779 /* Provider */ = {
+			isa = PBXGroup;
+			children = (
+				05F6D8A55D94515A84DA3E8CA6744F85 /* CardReaderProviderType.swift */,
+			);
+			path = Provider;
+			sourceTree = "<group>";
+		};
+		8E795A80F188FCECEEB2423E269C7F27 /* CardReaderProviderApi */ = {
+			isa = PBXGroup;
+			children = (
+				345E589FEF8A85680F28903EEB622326 /* Card */,
+				F37B3852BBB35A9623C0CECBEBE30374 /* Command */,
+				C5AB7170E7FE152FD3A2F3BA9023C2EB /* Model */,
+				89A55213339FB5289440C54045D85779 /* Provider */,
+				0D6E704012422A154F4E8A29F0FBAA8D /* Reader */,
+			);
+			name = CardReaderProviderApi;
+			path = Sources/CardReaderProviderApi;
+			sourceTree = "<group>";
+		};
+		90C1EEC5DB851A72E0582E2FA2537F8F /* Mac */ = {
+			isa = PBXGroup;
+			children = (
+				62CF698FAB62F139FFB3BAFCF25E15C9 /* GemCommonsKit.framework */,
+				8828BB626C3D3521ECC8AB41AC6CBB25 /* Nimble.framework */,
+			);
+			path = Mac;
+			sourceTree = "<group>";
+		};
+		B6A183B3D178CDD18E8B650CDA30247A /* CardReaderAccess */ = {
+			isa = PBXGroup;
+			children = (
+				AE3B6828DD0828DB44E63E3B6A4DBF43 /* CardReaderControllerManager.swift */,
+				5242DD81D25309A2EF373F25755014B4 /* internal */,
+			);
+			name = CardReaderAccess;
+			path = Sources/CardReaderAccess;
+			sourceTree = "<group>";
+		};
+		C5AB7170E7FE152FD3A2F3BA9023C2EB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A4339EC85A3AFDAA4687500299301A07 /* ProviderDescriptor.swift */,
+				2BF28C1072D851FB671628228C47F412 /* ProviderDescriptorType.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EE6A5DB3E341D439F70456E7E6546011 /* CardReaderAccessTests */ = {
+			isa = PBXGroup;
+			children = (
+				DADD0CA0E4EA25DB0940E1891D0D8DB3 /* CardReaderControllerManagerTest.swift */,
+				F1470286F2F829A80996DA5198A7EB4D /* Resources.bundle */,
+				5A4BFAF4E614F346E63D45478B10B82B /* XCTestManifests.swift */,
+				628A109220D4F7CAF25F427397D54852 /* internal */,
+			);
+			name = CardReaderAccessTests;
+			path = Tests/CardReaderAccessTests;
+			sourceTree = "<group>";
+		};
+		F37B3852BBB35A9623C0CECBEBE30374 /* Command */ = {
+			isa = PBXGroup;
+			children = (
+				DCC5EE20D758F157BDDA26D8E76C6811 /* APDU.swift */,
+				10572F5711EC4B7B2CBBECD8CDB23A53 /* CommandType.swift */,
+				5BB91D6311EC8E43B87B741666CA6856 /* CommandType+APDU.swift */,
+				34004B98454EF3210672BA65253536FD /* CommandType+LogicChannel.swift */,
+				135A9E424EF044219C314665753E3FE5 /* ResponseType.swift */,
+				4CA7B172F53F78A4D879B4B96A2F5FCB /* ResponseType+APDU.swift */,
+			);
+			path = Command;
+			sourceTree = "<group>";
+		};
+		F46C655287488A7CB26273CAA81544BE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				92CAA3B3E320F7E49D302396D2955932 /* CardReaderAccess.framework */,
+				20C99D970517EC0D66E0B122A290D777 /* CardReaderAccess.framework */,
+				AC9D8E97ED50240015DA9F89A29C8CB3 /* CardReaderAccessTests.xctest */,
+				518D513C13341A57E5917172E3ED8B3E /* CardReaderAccessTests.xctest */,
+				AA130FD7E21219812043D3DD0DB6DFBA /* CardReaderProviderApi.framework */,
+				0809C6DF8A86E19D37D867036DA34DAE /* CardReaderProviderApi.framework */,
+				C047FE6449C7964CF0BBF2D7DEBE0136 /* CardReaderProviderApiTests.xctest */,
+				7DC8BC2602FEC7ACDB0014908B432656 /* CardReaderProviderApiTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		05D370309DB948299126566CAEF91221 /* CardReaderAccessTests_macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 30816157500345683DDBAD83AA83857B /* Build configuration list for PBXNativeTarget "CardReaderAccessTests_macOS" */;
+			buildPhases = (
+				84760BF7147E19D79DB13A2DFA16F2A7 /* Sources */,
+				70C2A6B79F4D3C06A7F5217F3996909E /* Resources */,
+				7F4E2357AF8E2F2A74BB4499A5DCEF1B /* Frameworks */,
+				7915BBACE4D67A734DFA8DBFAA3B2851 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7109E2BB4DFD5C8F608152A6EB0B7FDF /* PBXTargetDependency */,
+				CBEE339FAFC788EF0CF265027488925F /* PBXTargetDependency */,
+			);
+			name = CardReaderAccessTests_macOS;
+			productName = CardReaderAccessTests_macOS;
+			productReference = 518D513C13341A57E5917172E3ED8B3E /* CardReaderAccessTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2E8BDF928C860275B97B40DE85FB3BD1 /* CardReaderProviderApiTests_macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FDAA23CF1C9D4C9C4320772D81C3EBBD /* Build configuration list for PBXNativeTarget "CardReaderProviderApiTests_macOS" */;
+			buildPhases = (
+				DF05B097B088FB5E22C7F72F268F37CC /* Sources */,
+				C7B84C7F93FDA39CFED2B0A9F2EFA408 /* Frameworks */,
+				B46A16873BDE03DDDFB9ACBD373AF74B /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DA535DD2D9723198D8A2B2BB319FE152 /* PBXTargetDependency */,
+			);
+			name = CardReaderProviderApiTests_macOS;
+			productName = CardReaderProviderApiTests_macOS;
+			productReference = 7DC8BC2602FEC7ACDB0014908B432656 /* CardReaderProviderApiTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4E4C855370629E8BDEA07A706845A1C0 /* CardReaderAccess_macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5C842EE7433565FD21CA085BB5DF20C7 /* Build configuration list for PBXNativeTarget "CardReaderAccess_macOS" */;
+			buildPhases = (
+				3761963CB34965D697B28BFD72061D3C /* Sources */,
+				58D26175D27495549455676C90A35037 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F6E2178E1BD605D7B1B1B99A98543FA0 /* PBXTargetDependency */,
+			);
+			name = CardReaderAccess_macOS;
+			productName = CardReaderAccess_macOS;
+			productReference = 20C99D970517EC0D66E0B122A290D777 /* CardReaderAccess.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		8629E5156A99460CD40ADC24301F0F98 /* CardReaderProviderApi_macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A7DD6DB14294A524BC383EDC433ED653 /* Build configuration list for PBXNativeTarget "CardReaderProviderApi_macOS" */;
+			buildPhases = (
+				FA013EF1EF5187EEEFC71566CC3D8F1F /* Sources */,
+				30199CDAE106D1E4726A528DFDBECCB4 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CardReaderProviderApi_macOS;
+			productName = CardReaderProviderApi_macOS;
+			productReference = 0809C6DF8A86E19D37D867036DA34DAE /* CardReaderProviderApi.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		965FDB85EDB207DFCC3FB2FDFCA48A36 /* CardReaderProviderApi_iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C0301962477A92CFD469AB162DB5EFAF /* Build configuration list for PBXNativeTarget "CardReaderProviderApi_iOS" */;
+			buildPhases = (
+				490B302405CD8B53E9C0428493D8BECA /* Sources */,
+				19A8493DD5EE4D1C95FAD5B613A66943 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CardReaderProviderApi_iOS;
+			productName = CardReaderProviderApi_iOS;
+			productReference = AA130FD7E21219812043D3DD0DB6DFBA /* CardReaderProviderApi.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		9AE3E75E73F8104274587B8DEEA8D2F7 /* CardReaderAccess_iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2B256BD8A4AF77CF2F80BDC4E99DD32E /* Build configuration list for PBXNativeTarget "CardReaderAccess_iOS" */;
+			buildPhases = (
+				41521A9387242A1B9B75F9B6131E149F /* Sources */,
+				76765890EC4A514B750EF207AA39DFB4 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0252932876FA7D2CBEA34F55E923A593 /* PBXTargetDependency */,
+			);
+			name = CardReaderAccess_iOS;
+			productName = CardReaderAccess_iOS;
+			productReference = 92CAA3B3E320F7E49D302396D2955932 /* CardReaderAccess.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		9B5B2C9EC9D971A2DE20C829BD01FCFF /* CardReaderAccessTests_iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DFCF493D8D077FAA17A44B93499AD9A7 /* Build configuration list for PBXNativeTarget "CardReaderAccessTests_iOS" */;
+			buildPhases = (
+				D2F3ADF1900A53445A72E93D192F68BA /* Sources */,
+				93A341C2A01E57B62A0528773731AB3D /* Resources */,
+				35E9081355FFF3AC558B1CF67B0B29E4 /* Frameworks */,
+				6A75D8A3A76416BB65507DE41FAA4907 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				98B63CCC8301A0DA282DF423995996FB /* PBXTargetDependency */,
+				E7AE99FBF0D0F07CCDA8F0E6882E143E /* PBXTargetDependency */,
+			);
+			name = CardReaderAccessTests_iOS;
+			productName = CardReaderAccessTests_iOS;
+			productReference = AC9D8E97ED50240015DA9F89A29C8CB3 /* CardReaderAccessTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EE61829092C86540D7A1AB3131395BF4 /* CardReaderProviderApiTests_iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 591EF5F1A4CD36B9E8C375DE213E99DA /* Build configuration list for PBXNativeTarget "CardReaderProviderApiTests_iOS" */;
+			buildPhases = (
+				3CD8104C31B80BECADA6B38BA10ACBBF /* Sources */,
+				6361FEB8BAD5CC6EE53D994C1A095BCD /* Frameworks */,
+				8BCE9AE2A6B64C3A5F74F2BE7FC6F166 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B075916451EA10F2A70B98FDD09BCAF4 /* PBXTargetDependency */,
+			);
+			name = CardReaderProviderApiTests_iOS;
+			productName = CardReaderProviderApiTests_iOS;
+			productReference = C047FE6449C7964CF0BBF2D7DEBE0136 /* CardReaderProviderApiTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E63EE4FCAFA7E1441FAB4786526175D0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1000;
+			};
+			buildConfigurationList = 590482669A669BCA25CDC07DD7F63378 /* Build configuration list for PBXProject "CardReaderProviderApi" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7D750D81D8A9DF055CD7F2D0442A38F6;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9B5B2C9EC9D971A2DE20C829BD01FCFF /* CardReaderAccessTests_iOS */,
+				05D370309DB948299126566CAEF91221 /* CardReaderAccessTests_macOS */,
+				9AE3E75E73F8104274587B8DEEA8D2F7 /* CardReaderAccess_iOS */,
+				4E4C855370629E8BDEA07A706845A1C0 /* CardReaderAccess_macOS */,
+				EE61829092C86540D7A1AB3131395BF4 /* CardReaderProviderApiTests_iOS */,
+				2E8BDF928C860275B97B40DE85FB3BD1 /* CardReaderProviderApiTests_macOS */,
+				965FDB85EDB207DFCC3FB2FDFCA48A36 /* CardReaderProviderApi_iOS */,
+				8629E5156A99460CD40ADC24301F0F98 /* CardReaderProviderApi_macOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		70C2A6B79F4D3C06A7F5217F3996909E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4747637A4B773FC9E5FD777DDBA1AD8A /* Resources.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		93A341C2A01E57B62A0528773731AB3D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E27A3D4E64304B6F4226888E341C0FD /* Resources.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3761963CB34965D697B28BFD72061D3C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1232460E75F9D03066661B650CFF28E4 /* CardReaderControllerManager.swift in Sources */,
+				E8CA8AAE786F916F16A3979B5F43A481 /* Swift+Reflection.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3CD8104C31B80BECADA6B38BA10ACBBF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				630EB133B3EC4E9A7D727B3670C73EC5 /* APDUCommandTest.swift in Sources */,
+				1D665D8C8BD3BA850DE02601B05BA77F /* APDUResponseTest.swift in Sources */,
+				7AD31377A1604995B94B60662D4956BE /* CardReaderTest.swift in Sources */,
+				1C23276F223B3A9BA02A49B975B99B8E /* CommandTypeExtLogicChannelTests.swift in Sources */,
+				6608F0EA87BA3100F99C25E8B1E38446 /* XCTestManifests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		41521A9387242A1B9B75F9B6131E149F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				275CB06A9B3F503788F90DE5493864E0 /* CardReaderControllerManager.swift in Sources */,
+				651588C6C061344986C9112148E36D73 /* Swift+Reflection.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		490B302405CD8B53E9C0428493D8BECA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C68BA8DAADF3857F5AC09549F7BA0D13 /* APDU.swift in Sources */,
+				9AE50AC4C6541F8FCAB42293DA8B92F5 /* CardChannelType.swift in Sources */,
+				680E8B7AABBF1EAA28DA6E014609C573 /* CardError.swift in Sources */,
+				26E04B9A86A5B22F8ED2A8D0D0F67DDC /* CardProtocol.swift in Sources */,
+				F68741C257AFFE412A5259BBBB0B41DD /* CardReaderControllerType.swift in Sources */,
+				DAD2F922A97B41E8247BDF4DF440EC9E /* CardReaderProviderType.swift in Sources */,
+				B38290CB9A94B16C0CCFA8CD19C1A1D8 /* CardReaderType.swift in Sources */,
+				ED429186C62BCB4B2DA697604861B924 /* CardType.swift in Sources */,
+				5899C5B36FB9ED6392557FAFE94F7C0F /* CommandType+APDU.swift in Sources */,
+				EDF4C3AC5D50FAE49154655CDF024037 /* CommandType+LogicChannel.swift in Sources */,
+				AA571A206979E9236FFD0A9556A94F56 /* CommandType.swift in Sources */,
+				8457A822AB84794FB7F333DE8A40D16F /* ProviderDescriptor.swift in Sources */,
+				8CF477453BFB5527D1CE6C5B943F9C68 /* ProviderDescriptorType.swift in Sources */,
+				2C28E95D7627EDEDC72BD76CEEC292DD /* ResponseType+APDU.swift in Sources */,
+				BFFBFE2DD90AB763AAB205F03D4A676E /* ResponseType.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84760BF7147E19D79DB13A2DFA16F2A7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4963DC83BEFA2A9060B91D3A359D438F /* CardReaderControllerManagerTest.swift in Sources */,
+				1EBD5072EC1E65E3AE436CDEC98608CF /* SwiftExtReflectionTest.swift in Sources */,
+				CA4C413CE10C768B8E48922AC71ACCC1 /* XCTestManifests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2F3ADF1900A53445A72E93D192F68BA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63ECB17D66ABC51CE00BB5756DA62AE9 /* CardReaderControllerManagerTest.swift in Sources */,
+				C072B5462199A89131C6DB59BD8955F7 /* SwiftExtReflectionTest.swift in Sources */,
+				4C81C685337E14FAE7E7B39315295022 /* XCTestManifests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DF05B097B088FB5E22C7F72F268F37CC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E087C119CAB2F3824CDB5BE6667E02B /* APDUCommandTest.swift in Sources */,
+				2ED736342968AD5C5788AA9C059F9DD2 /* APDUResponseTest.swift in Sources */,
+				22D7B7F66036FC9A023CBABEE3546FB2 /* CardReaderTest.swift in Sources */,
+				2F690AB14A96E7B5226B68E5B9151CBB /* CommandTypeExtLogicChannelTests.swift in Sources */,
+				4A2C1C0C2D2825BDEB6CF8A24E465B1B /* XCTestManifests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA013EF1EF5187EEEFC71566CC3D8F1F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B8E0C8564868C45F550F3EA96CE967E /* APDU.swift in Sources */,
+				CA40B38729B1C146233BC18C8AB10664 /* CardChannelType.swift in Sources */,
+				D607CE9B3EEA771237E7992DEC2859C2 /* CardError.swift in Sources */,
+				AD22F4E03A2F4F7A68C7E9EDCA0604FE /* CardProtocol.swift in Sources */,
+				652038650BA9BE0EAED72D9CFF678D87 /* CardReaderControllerType.swift in Sources */,
+				314EC68E167E1D58FC425CF4A8AF10BD /* CardReaderProviderType.swift in Sources */,
+				C4E52BA97BBAF51CF1D55ECEC4FB2395 /* CardReaderType.swift in Sources */,
+				49AEE0A4D0C0779BE04F311B0422A178 /* CardType.swift in Sources */,
+				776011D85B4B1040336D4A87D67456B4 /* CommandType+APDU.swift in Sources */,
+				BE6DEE30DB528E109ADCCA4C721A9808 /* CommandType+LogicChannel.swift in Sources */,
+				997212630B0CA48A866C8A955FAF602C /* CommandType.swift in Sources */,
+				87EBC420FF7C45F7740C1787F5658C05 /* ProviderDescriptor.swift in Sources */,
+				924CEB1E5EDCB650D0954D34211DB1EA /* ProviderDescriptorType.swift in Sources */,
+				72273C8DBE849AC5C6F793CE738BC747 /* ResponseType+APDU.swift in Sources */,
+				842A0D440CD3DA2E0D9B23F826D91A43 /* ResponseType.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0252932876FA7D2CBEA34F55E923A593 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 965FDB85EDB207DFCC3FB2FDFCA48A36 /* CardReaderProviderApi_iOS */;
+			targetProxy = E8A0DE14728918BA3E37BDA04374B2A6 /* PBXContainerItemProxy */;
+		};
+		7109E2BB4DFD5C8F608152A6EB0B7FDF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4E4C855370629E8BDEA07A706845A1C0 /* CardReaderAccess_macOS */;
+			targetProxy = 63CE0351A268699850A3959B43F6EB93 /* PBXContainerItemProxy */;
+		};
+		98B63CCC8301A0DA282DF423995996FB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9AE3E75E73F8104274587B8DEEA8D2F7 /* CardReaderAccess_iOS */;
+			targetProxy = 12E7DCD76EB659348046B70D2BAC1A58 /* PBXContainerItemProxy */;
+		};
+		B075916451EA10F2A70B98FDD09BCAF4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 965FDB85EDB207DFCC3FB2FDFCA48A36 /* CardReaderProviderApi_iOS */;
+			targetProxy = 6D9A4EA507005B73AD1C7E5F9EC7857B /* PBXContainerItemProxy */;
+		};
+		CBEE339FAFC788EF0CF265027488925F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8629E5156A99460CD40ADC24301F0F98 /* CardReaderProviderApi_macOS */;
+			targetProxy = 7003AA37CDEB177ED7ED27EBFC0E416B /* PBXContainerItemProxy */;
+		};
+		DA535DD2D9723198D8A2B2BB319FE152 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8629E5156A99460CD40ADC24301F0F98 /* CardReaderProviderApi_macOS */;
+			targetProxy = FDC9470B0BB278D2E473E3CD7DFBBBAE /* PBXContainerItemProxy */;
+		};
+		E7AE99FBF0D0F07CCDA8F0E6882E143E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 965FDB85EDB207DFCC3FB2FDFCA48A36 /* CardReaderProviderApi_iOS */;
+			targetProxy = 41FD5408BD29E2377E6BB06B155AD15B /* PBXContainerItemProxy */;
+		};
+		F6E2178E1BD605D7B1B1B99A98543FA0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8629E5156A99460CD40ADC24301F0F98 /* CardReaderProviderApi_macOS */;
+			targetProxy = 4E4CAFFB33A8C34DE7FCC6965D5F1D98 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0B377AF7EFC1BA5356F2DCD66B83E063 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
+				INFOPLIST_FILE = DerivedData/CardReaderProviderApi/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "de.gematik.ti.cardreader.provider.CardReaderProviderApi-macOS";
+				PRODUCT_NAME = CardReaderProviderApi;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Debug;
+		};
+		242B12597F839714148849F5105C2604 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "de.gematik.ti.cardreader.provider.CardReaderAccessTests-iOS";
+				PRODUCT_NAME = CardReaderAccessTests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3A7BECE389BB3F69EE119EE3ED6A4AF9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "de.gematik.ti.cardreader.provider.CardReaderAccessTests-iOS";
+				PRODUCT_NAME = CardReaderAccessTests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		4A4C8BAA16D325B0EAF79015D172F2B7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "de.gematik.ti.cardreader.provider.CardReaderAccessTests-macOS";
+				PRODUCT_NAME = CardReaderAccessTests;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		4FF4C223BC7C7C42A5617087F0C7D784 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = DerivedData/CardReaderProviderApi/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "de.gematik.ti.cardreader.provider.CardReaderProviderApi-iOS";
+				PRODUCT_NAME = CardReaderProviderApi;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Release;
+		};
+		57190C1CE711C0EF156A811A010C6625 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.0;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6BA885BC946A7A3D84DFA191AA8551B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "de.gematik.ti.cardreader.provider.CardReaderProviderApiTests-iOS";
+				PRODUCT_NAME = CardReaderProviderApiTests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		75915C634DDE3C50804306B2E8140275 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
+				INFOPLIST_FILE = DerivedData/CardReaderProviderApi/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "de.gematik.ti.cardreader.provider.CardReaderProviderApi-macOS";
+				PRODUCT_NAME = CardReaderProviderApi;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Release;
+		};
+		775BB16ECFDE696509B046CADD67BEF5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "de.gematik.ti.cardreader.provider.CardReaderProviderApiTests-iOS";
+				PRODUCT_NAME = CardReaderProviderApiTests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		91FE6CCBDA56261455F84B0DAE9093C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "de.gematik.ti.cardreader.provider.CardReaderProviderApiTests-macOS";
+				PRODUCT_NAME = CardReaderProviderApiTests;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		9886F90BE2D02B330AA1377586EFD9E0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
+				INFOPLIST_FILE = DerivedData/CardReaderAccess/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "de.gematik.ti.cardreader.provider.CardReaderAccess-macOS";
+				PRODUCT_NAME = CardReaderAccess;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Debug;
+		};
+		B5F718A320F95A717F9213D1120D6CF2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_COMPILATION_MODE = incremental;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		BFD51B57C81BB8E9F96F3D7B81B64043 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "de.gematik.ti.cardreader.provider.CardReaderAccessTests-macOS";
+				PRODUCT_NAME = CardReaderAccessTests;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		C4A678D08FB03C5BFD8956D46C1C7CC1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = DerivedData/CardReaderAccess/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "de.gematik.ti.cardreader.provider.CardReaderAccess-iOS";
+				PRODUCT_NAME = CardReaderAccess;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Debug;
+		};
+		CF392BF7E96CD766781A69F283181842 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
+				INFOPLIST_FILE = DerivedData/CardReaderAccess/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "de.gematik.ti.cardreader.provider.CardReaderAccess-macOS";
+				PRODUCT_NAME = CardReaderAccess;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Release;
+		};
+		E7FCE5BFBD6ABE4EF57024895B656075 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = DerivedData/CardReaderProviderApi/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "de.gematik.ti.cardreader.provider.CardReaderProviderApi-iOS";
+				PRODUCT_NAME = CardReaderProviderApi;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Debug;
+		};
+		F977A63D3EC4E05B70C698078C0664E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = DerivedData/CardReaderAccess/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "de.gematik.ti.cardreader.provider.CardReaderAccess-iOS";
+				PRODUCT_NAME = CardReaderAccess;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Release;
+		};
+		FA3C8E8BC5D0978E57454178A77C65A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "de.gematik.ti.cardreader.provider.CardReaderProviderApiTests-macOS";
+				PRODUCT_NAME = CardReaderProviderApiTests;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2B256BD8A4AF77CF2F80BDC4E99DD32E /* Build configuration list for PBXNativeTarget "CardReaderAccess_iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C4A678D08FB03C5BFD8956D46C1C7CC1 /* Debug */,
+				F977A63D3EC4E05B70C698078C0664E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = "";
+		};
+		30816157500345683DDBAD83AA83857B /* Build configuration list for PBXNativeTarget "CardReaderAccessTests_macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BFD51B57C81BB8E9F96F3D7B81B64043 /* Debug */,
+				4A4C8BAA16D325B0EAF79015D172F2B7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = "";
+		};
+		590482669A669BCA25CDC07DD7F63378 /* Build configuration list for PBXProject "CardReaderProviderApi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B5F718A320F95A717F9213D1120D6CF2 /* Debug */,
+				57190C1CE711C0EF156A811A010C6625 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		591EF5F1A4CD36B9E8C375DE213E99DA /* Build configuration list for PBXNativeTarget "CardReaderProviderApiTests_iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6BA885BC946A7A3D84DFA191AA8551B2 /* Debug */,
+				775BB16ECFDE696509B046CADD67BEF5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = "";
+		};
+		5C842EE7433565FD21CA085BB5DF20C7 /* Build configuration list for PBXNativeTarget "CardReaderAccess_macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9886F90BE2D02B330AA1377586EFD9E0 /* Debug */,
+				CF392BF7E96CD766781A69F283181842 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = "";
+		};
+		A7DD6DB14294A524BC383EDC433ED653 /* Build configuration list for PBXNativeTarget "CardReaderProviderApi_macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0B377AF7EFC1BA5356F2DCD66B83E063 /* Debug */,
+				75915C634DDE3C50804306B2E8140275 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = "";
+		};
+		C0301962477A92CFD469AB162DB5EFAF /* Build configuration list for PBXNativeTarget "CardReaderProviderApi_iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E7FCE5BFBD6ABE4EF57024895B656075 /* Debug */,
+				4FF4C223BC7C7C42A5617087F0C7D784 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = "";
+		};
+		DFCF493D8D077FAA17A44B93499AD9A7 /* Build configuration list for PBXNativeTarget "CardReaderAccessTests_iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				242B12597F839714148849F5105C2604 /* Debug */,
+				3A7BECE389BB3F69EE119EE3ED6A4AF9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = "";
+		};
+		FDAA23CF1C9D4C9C4320772D81C3EBBD /* Build configuration list for PBXNativeTarget "CardReaderProviderApiTests_macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				91FE6CCBDA56261455F84B0DAE9093C7 /* Debug */,
+				FA3C8E8BC5D0978E57454178A77C65A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = "";
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E63EE4FCAFA7E1441FAB4786526175D0 /* Project object */;
+}

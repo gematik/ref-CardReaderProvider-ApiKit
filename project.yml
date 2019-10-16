@@ -1,0 +1,62 @@
+name: CardReaderProviderApi
+options:
+  bundleIdPrefix: de.gematik.ti.cardreader.provider
+  deploymentTarget:
+    macOS: 10.12
+    iOS: 12.1
+settings:
+  base:
+    SWIFT_VERSION: 5.0
+    ALWAYS_SEARCH_USER_PATHS: NO
+    FRAMEWORK_SEARCH_PATHS: "$(inherited)"
+  configs:
+    Release:
+      SWIFT_COMPILATION_MODE: wholemodule
+    Debug:
+      SWIFT_COMPILATION_MODE: incremental
+targets:
+  CardReaderProviderApi:
+    type: framework
+    platform: [iOS,macOS]
+    sources:
+      - Sources/CardReaderProviderApi
+    info:
+      path: DerivedData/CardReaderProviderApi/Info.plist
+    dependencies:
+      - carthage: GemCommonsKit
+    scheme:
+      testTargets:
+        - CardReaderProviderApiTests_${platform}
+      gatherCoverageData: true
+  CardReaderAccess:
+    type: framework
+    platform: [iOS,macOS]
+    sources:
+      - Sources/CardReaderAccess
+    info:
+      path: DerivedData/CardReaderAccess/Info.plist           
+    dependencies:
+      - target: CardReaderProviderApi_${platform}
+      - carthage: GemCommonsKit
+    scheme:
+      testTargets:
+        - CardReaderAccessTests_${platform}
+      gatherCoverageData: true
+  CardReaderProviderApiTests:
+    type: bundle.unit-test
+    platform: [macOS,iOS]
+    sources:
+      - Tests/CardReaderProviderApiTests
+    dependencies:
+      - target: CardReaderProviderApi_${platform}
+      - carthage: Nimble
+  CardReaderAccessTests:
+    type: bundle.unit-test
+    platform: [macOS,iOS]
+    sources:
+      - Tests/CardReaderAccessTests
+    dependencies:
+      - target: CardReaderAccess_${platform}
+      - target: CardReaderProviderApi_${platform}
+      - carthage: Nimble
+buildImplicitDependencies: true
