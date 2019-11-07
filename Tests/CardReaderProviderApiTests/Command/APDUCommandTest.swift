@@ -90,7 +90,7 @@ final class APDUCommandTest: XCTestCase {
     func testCommandAPDU_case3s() {
         // Data length <= 255 | no expected response length
 
-        let data = Data(bytes: [0xa0, 0xa0, 0xa0, 0xa0, 0xa0, 0xa0, 0xa0, 0xa0, 0xa0, 0xa0])
+        let data = Data([0xa0, 0xa0, 0xa0, 0xa0, 0xa0, 0xa0, 0xa0, 0xa0, 0xa0, 0xa0])
         guard let command = try? APDU.Command(cla: 0x1, ins: 0x2, p1: 0x3, p2: 0x4, data: data, ne: nil) else {
             Nimble.fail("APDU command could not be initialized")
             return
@@ -112,7 +112,7 @@ final class APDUCommandTest: XCTestCase {
     func testCommandAPDU_case4s() {
         // Data length <= 255 and expected response length <= 256
 
-        let data = Data(bytes: [0xa0, 0xa0, 0xa0, 0xa0, 0xa0, 0xa0, 0xa0, 0xa0, 0xa0, 0xa0])
+        let data = Data([0xa0, 0xa0, 0xa0, 0xa0, 0xa0, 0xa0, 0xa0, 0xa0, 0xa0, 0xa0])
         guard let command = try? APDU.Command(cla: 0x1, ins: 0x2, p1: 0x3, p2: 0x4, data: data, ne: 12) else {
             Nimble.fail("APDU command could not be initialized")
             return
@@ -134,7 +134,7 @@ final class APDUCommandTest: XCTestCase {
     func testCommandAPDU_case4s_max() {
         // Data length <= 255 and expected response length <= 256
 
-        let data = Data(bytes: [0xa0, 0xa0, 0xa0, 0xa0, 0xa0, 0xa0, 0xa0, 0xa0, 0xa0, 0xa0])
+        let data = Data([0xa0, 0xa0, 0xa0, 0xa0, 0xa0, 0xa0, 0xa0, 0xa0, 0xa0, 0xa0])
         guard let command = try? APDU.Command(cla: 0x1, ins: 0x2, p1: 0x3, p2: 0x4, data: data, ne: 256) else {
             Nimble.fail("APDU command could not be initialized")
             return
@@ -197,7 +197,7 @@ final class APDUCommandTest: XCTestCase {
         //case 3e: |CLA|INS|P1 |P2 |00 |LC1|LC2|...BODY...|          len = 8..65542
         var data = Data()
         repeat {
-            data.append(Data(bytes: [0xf1, 0x80, 0xa, 0xa0, 0x0a]))
+            data.append(Data([0xf1, 0x80, 0xa, 0xa0, 0x0a]))
         } while (data.count < 30000)
         guard let command = try? APDU.Command(cla: 0x1, ins: 0x2, p1: 0x3, p2: 0x4, data: data, ne: nil) else {
             Nimble.fail("APDU command could not be initialized")
@@ -225,7 +225,7 @@ final class APDUCommandTest: XCTestCase {
         // Data length > 255 OR expected response length > 256
 
         //case 4e: |CLA|INS|P1 |P2 |00 |LC1|LC2|...BODY...|LE1|LE2|  len =10..65544
-        let data = Data(bytes: [0xa0, 0xa0, 0xa0, 0xa0, 0xa0, 0xa0, 0xa0, 0xa0, 0xa0, 0xa0])
+        let data = Data([0xa0, 0xa0, 0xa0, 0xa0, 0xa0, 0xa0, 0xa0, 0xa0, 0xa0, 0xa0])
         guard let command = try? APDU.Command(cla: 0x1, ins: 0x2, p1: 0x3, p2: 0x4, data: data, ne: 512) else {
             Nimble.fail("APDU command could not be initialized")
             return
@@ -251,7 +251,7 @@ final class APDUCommandTest: XCTestCase {
     func testCommandAPDU_case4e_big_data() {
         var data = Data()
         repeat {
-            data.append(Data(bytes: [0xf1, 0x80, 0xa, 0xa0, 0x0a]))
+            data.append(Data([0xf1, 0x80, 0xa, 0xa0, 0x0a]))
         } while (data.count < 30000)
         guard let command = try? APDU.Command(cla: 0x1, ins: 0x2, p1: 0x3, p2: 0x4, data: data, ne: 256) else {
             Nimble.fail("APDU command could not be initialized")
@@ -276,7 +276,7 @@ final class APDUCommandTest: XCTestCase {
     }
 
     func testCommandAPDU_case4e_small_data() {
-        let data = Data(bytes: [0xa0, 0xa0, 0xa0, 0xa0, 0xa0, 0xa0, 0xa0, 0xa0, 0xa0, 0xa0])
+        let data = Data([0xa0, 0xa0, 0xa0, 0xa0, 0xa0, 0xa0, 0xa0, 0xa0, 0xa0, 0xa0])
         guard let command = try? APDU.Command(cla: 0x1, ins: 0x2, p1: 0x3, p2: 0x4, data: data, ne: 512) else {
             Nimble.fail("APDU command could not be initialized")
             return
@@ -301,7 +301,7 @@ final class APDUCommandTest: XCTestCase {
     func testCommandAPDU_case4e_too_big_data() {
         var data = Data()
         repeat {
-            data.append(Data(bytes: [0xf1, 0x80, 0xa, 0xa0, 0x0a]))
+            data.append(Data([0xf1, 0x80, 0xa, 0xa0, 0x0a]))
         } while (data.count < 65535 + 5)
 
         expect(try APDU.Command(cla: 0x1, ins: 0x2, p1: 0x3, p2: 0x4, data: data, ne: 256)).to(throwError())
@@ -310,7 +310,7 @@ final class APDUCommandTest: XCTestCase {
     }
 
     func testCommandAPDU_expectedLengthWildcardEncoding_short() {
-        let data = Data(bytes: [0xa0, 0xa0, 0xa0, 0xa0, 0xa0, 0xa0, 0xa0, 0xa0, 0xa0, 0xa0])
+        let data = Data([0xa0, 0xa0, 0xa0, 0xa0, 0xa0, 0xa0, 0xa0, 0xa0, 0xa0, 0xa0])
 
         // test with ne = static wildcard variables short
         expect {
@@ -353,12 +353,12 @@ final class APDUCommandTest: XCTestCase {
         // ne = 0 -> wildcard short
         expect {
             try APDU.Command(cla: 0x1, ins: 0x2, p1: 0x3, p2: 0x4, data: nil, ne: 0).bytes
-        } == Data(bytes: [0x1, 0x2, 0x3, 0x4, 0x0])
+        } == Data([0x1, 0x2, 0x3, 0x4, 0x0])
 
         // ne = nil
         expect {
             try APDU.Command(cla: 0x1, ins: 0x2, p1: 0x3, p2: 0x4, data: nil).bytes
-        } == Data(bytes: [0x1, 0x2, 0x3, 0x4])
+        } == Data([0x1, 0x2, 0x3, 0x4])
     }
 
     func testCommandAPDU_ErrorExpectedLengthOutOfBounds() {

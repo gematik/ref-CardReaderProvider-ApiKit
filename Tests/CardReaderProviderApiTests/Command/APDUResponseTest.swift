@@ -95,7 +95,7 @@ final class APDUResponseTest: XCTestCase {
         expect {
             try APDU.Response(apdu: responseData)
         }.to(throwError { (error: APDU.Error) in
-            expect(error.data).to(equal(Data(bytes: [0x1])))
+            expect(error.data).to(equal(Data([0x1])))
         })
     }
 

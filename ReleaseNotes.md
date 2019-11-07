@@ -1,3 +1,6 @@
+# Release 1.0.3
+- extend CardType protocol: function initialApplicationIdentifier()
+
 # Release 1.0.2
 fixed repository name in Cartfile
 

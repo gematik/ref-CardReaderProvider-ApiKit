@@ -213,7 +213,7 @@ extension APDU.Command {
     }
 
     private static func header(cla: UInt8, ins: UInt8, p1: UInt8, p2: UInt8) -> Data {
-        return Data(bytes: [cla, ins, p1, p2])
+        return Data([cla, ins, p1, p2])
     }
 
     private static func encodeExpectedLength(extended ne: Int) -> Data {
@@ -225,22 +225,22 @@ extension APDU.Command {
             l1 = UInt8(ne >> 8)
             l2 = UInt8(ne & 0xff)
         }
-        return Data(bytes: [l1, l2])
+        return Data([l1, l2])
     }
 
     private static func encodeExpectedLength(short ne: Int) -> Data {
         let len = (ne != APDU.expectedLengthWildcardShort) ? UInt8(ne) : 0x0
-        return Data(bytes: [len])
+        return Data([len])
     }
 
     private static func encodeDataLength(extended nc: Int) -> Data {
         let l1 = UInt8(nc >> 8)
         let l2 = UInt8(nc & 0xff)
-        return Data(bytes: [0x0, l1, l2])
+        return Data([0x0, l1, l2])
     }
 
     private static func encodeDataLength(short nc: Int) -> Data {
-        return Data(bytes: [UInt8(nc)])
+        return Data([UInt8(nc)])
     }
     //swiftlint:enable identifier_name
 }

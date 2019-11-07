@@ -60,6 +60,11 @@ public protocol CardType {
      */
     func transmitControl(command: Int, data: Data) throws -> Data
 
+    /// Provide an initial application identifier of an application on the underlying card (f.e. the root application).
+    /// - Throws: Error when requesting the application identifier or parsing it.
+    /// - Returns: The initial application identifier if known, else nil.
+    func initialApplicationIdentifier() throws -> Data?
+
     /**
         Disconnect connection to the Card.
 
@@ -72,8 +77,13 @@ public protocol CardType {
 
 /// Default behaviour to CardType
 extension CardType {
-    /// default implementation returns empty data object.
+    /// Default implementation returns empty data object.
     public func transmitControl(command: Int, data: Data) throws -> Data {
         return Data.empty
+    }
+
+    /// Default implementation returns nil.
+    public func initialApplicationIdentifier() throws -> Data? {
+        nil
     }
 }
