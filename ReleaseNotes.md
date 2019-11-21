@@ -1,3 +1,6 @@
+# Release 1.0.4
+Info.plist files added to repo
+
 # Release 1.0.3
 - extend CardType protocol: function initialApplicationIdentifier()
 

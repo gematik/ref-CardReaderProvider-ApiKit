@@ -21,7 +21,7 @@ targets:
     sources:
       - Sources/CardReaderProviderApi
     info:
-      path: DerivedData/CardReaderProviderApi/Info.plist
+      path: Resources/CardReaderProviderApi_Info.plist
     dependencies:
       - carthage: GemCommonsKit
     scheme:
@@ -34,7 +34,7 @@ targets:
     sources:
       - Sources/CardReaderAccess
     info:
-      path: DerivedData/CardReaderAccess/Info.plist           
+      path: Resources/CardReaderAccess_Info.plist
     dependencies:
       - target: CardReaderProviderApi_${platform}
       - carthage: GemCommonsKit

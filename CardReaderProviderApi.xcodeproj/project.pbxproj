@@ -879,7 +879,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/Mac",
 				);
-				INFOPLIST_FILE = DerivedData/CardReaderProviderApi/Info.plist;
+				INFOPLIST_FILE = Resources/CardReaderProviderApi_Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "de.gematik.ti.cardreader.provider.CardReaderProviderApi-macOS";
@@ -951,7 +951,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
-				INFOPLIST_FILE = DerivedData/CardReaderProviderApi/Info.plist;
+				INFOPLIST_FILE = Resources/CardReaderProviderApi_Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "de.gematik.ti.cardreader.provider.CardReaderProviderApi-iOS";
@@ -1047,7 +1047,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/Mac",
 				);
-				INFOPLIST_FILE = DerivedData/CardReaderProviderApi/Info.plist;
+				INFOPLIST_FILE = Resources/CardReaderProviderApi_Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "de.gematik.ti.cardreader.provider.CardReaderProviderApi-macOS";
@@ -1104,7 +1104,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/Mac",
 				);
-				INFOPLIST_FILE = DerivedData/CardReaderAccess/Info.plist;
+				INFOPLIST_FILE = Resources/CardReaderAccess_Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "de.gematik.ti.cardreader.provider.CardReaderAccess-macOS";
@@ -1206,7 +1206,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
-				INFOPLIST_FILE = DerivedData/CardReaderAccess/Info.plist;
+				INFOPLIST_FILE = Resources/CardReaderAccess_Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "de.gematik.ti.cardreader.provider.CardReaderAccess-iOS";
@@ -1232,7 +1232,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/Mac",
 				);
-				INFOPLIST_FILE = DerivedData/CardReaderAccess/Info.plist;
+				INFOPLIST_FILE = Resources/CardReaderAccess_Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "de.gematik.ti.cardreader.provider.CardReaderAccess-macOS";
@@ -1256,7 +1256,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
-				INFOPLIST_FILE = DerivedData/CardReaderProviderApi/Info.plist;
+				INFOPLIST_FILE = Resources/CardReaderProviderApi_Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "de.gematik.ti.cardreader.provider.CardReaderProviderApi-iOS";
@@ -1281,7 +1281,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
-				INFOPLIST_FILE = DerivedData/CardReaderAccess/Info.plist;
+				INFOPLIST_FILE = Resources/CardReaderAccess_Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "de.gematik.ti.cardreader.provider.CardReaderAccess-iOS";
