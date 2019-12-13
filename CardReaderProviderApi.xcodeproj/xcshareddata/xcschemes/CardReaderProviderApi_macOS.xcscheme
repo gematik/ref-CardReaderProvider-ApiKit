@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "1000"
+   LastUpgradeVersion = "1020"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "8629E5156A99460CD40ADC24301F0F98"
+               BlueprintIdentifier = "8629E5156A99460CD40ADC24"
                BuildableName = "CardReaderProviderApi.framework"
                BlueprintName = "CardReaderProviderApi_macOS"
                ReferencedContainer = "container:CardReaderProviderApi.xcodeproj">
@@ -27,13 +27,14 @@
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       codeCoverageEnabled = "YES"
+      onlyGenerateCoverageForSpecifiedTargets = "NO"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
          <TestableReference
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "2E8BDF928C860275B97B40DE85FB3BD1"
+               BlueprintIdentifier = "2E8BDF928C860275B97B40DE"
                BuildableName = "CardReaderProviderApiTests.xctest"
                BlueprintName = "CardReaderProviderApiTests_macOS"
                ReferencedContainer = "container:CardReaderProviderApi.xcodeproj">
@@ -43,7 +44,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "8629E5156A99460CD40ADC24301F0F98"
+            BlueprintIdentifier = "8629E5156A99460CD40ADC24"
             BuildableName = "CardReaderProviderApi.framework"
             BlueprintName = "CardReaderProviderApi_macOS"
             ReferencedContainer = "container:CardReaderProviderApi.xcodeproj">
@@ -53,6 +54,8 @@
       </CommandLineArguments>
       <AdditionalOptions>
       </AdditionalOptions>
+      <CodeCoverageTargets>
+      </CodeCoverageTargets>
    </TestAction>
    <LaunchAction
       buildConfiguration = "Debug"
@@ -67,7 +70,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "8629E5156A99460CD40ADC24301F0F98"
+            BlueprintIdentifier = "8629E5156A99460CD40ADC24"
             BuildableName = "CardReaderProviderApi.framework"
             BlueprintName = "CardReaderProviderApi_macOS"
             ReferencedContainer = "container:CardReaderProviderApi.xcodeproj">
@@ -88,7 +91,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "8629E5156A99460CD40ADC24301F0F98"
+            BlueprintIdentifier = "8629E5156A99460CD40ADC24"
             BuildableName = "CardReaderProviderApi.framework"
             BlueprintName = "CardReaderProviderApi_macOS"
             ReferencedContainer = "container:CardReaderProviderApi.xcodeproj">

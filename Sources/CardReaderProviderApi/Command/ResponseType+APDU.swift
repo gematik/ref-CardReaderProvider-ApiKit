@@ -1,6 +1,6 @@
 // swiftlint:disable:this file_name
 //
-//  Copyright (c) 2019 gematik - Gesellschaft für Telematikanwendungen der Gesundheitskarte mbH
+//  Copyright (c) 2019 Gematik GmbH
 //  
 //  Licensed under the Apache License, Version 2.0 (the "License");
 //  you may not use this file except in compliance with the License.
