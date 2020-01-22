@@ -1,3 +1,6 @@
+# Release 1.0.6
+- publish API documentation (GitHub.io page)
+
 # Release 1.0.5
 - update Carthage dependencies
 
