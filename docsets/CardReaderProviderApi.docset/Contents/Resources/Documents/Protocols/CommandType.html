@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>CommandType Protocol Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+	<meta name="viewport" content="width=device-width, viewport-fit=cover, initial-scale=1.0" />
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Protocol/CommandType" class="dashAnchor"></a>
+    <a title="CommandType Protocol Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p>
+          <a href="../index.html">CardReaderProviderApi Docs</a>
+          <span class="no-mobile"> (98% documented)</span>
+        </p>
+    
+        <p class="header-right">
+          <a href="https://build.top.local/source/git/refImpl/mobszen/iOS/CardReaderProviderApi-swift.git">
+            <img src="../img/gh.png"/>
+            <span class="no-mobile">View on GitHub</span>
+          </a>
+        </p>
+    
+      </div>
+    </header>
+    <div id="breadcrumbs-container">
+      <div class="content-wrapper">
+        <p id="breadcrumbs">
+          <span class="no-mobile">
+            <a href="../index.html">CardReaderProviderApi Reference</a>
+            <img id="carat" src="../img/carat.png" />
+          </span>
+          CommandType Protocol Reference
+        </p>
+      </div>
+    </div>
+    <div class="wrapper">
+      <div class="article-wrapper">
+        <article class="main-content">
+          <section>
+            <section class="section">
+              <h1>CommandType</h1>
+                <div class="declaration">
+                  <div class="language">
+                    <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">CommandType</span></code></pre>
+
+                  </div>
+                </div>
+              <p>SmartCard Application Protocol Data Unit - Command</p>
+
+            </section>
+            <section class="section task-group-section">
+              <div class="task-group">
+                <ul>
+                  <li class="item">
+                    <div>
+                      <code>
+                      <a name="/s:21CardReaderProviderApi11CommandTypeP4data10Foundation4DataVSgvp"></a>
+                      <a name="//apple_ref/swift/Property/data" class="dashAnchor"></a>
+                      <a class="token" href="#/s:21CardReaderProviderApi11CommandTypeP4data10Foundation4DataVSgvp">data</a>
+                      </code>
+                    </div>
+                    <div class="height-container">
+                      <div class="pointer-container"></div>
+                      <section class="section">
+                        <div class="pointer"></div>
+                        <div class="abstract">
+                          <p>Returns bytes in the command body. If this APDU has no body, this property should return nil</p>
+
+                        </div>
+                        <div class="declaration">
+                          <h4>Declaration</h4>
+                          <div class="language">
+                            <p class="aside-title">Swift</p>
+                            <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">data</span><span class="p">:</span> <span class="kt">Data</span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                          </div>
+                        </div>
+                      </section>
+                    </div>
+                  </li>
+                  <li class="item">
+                    <div>
+                      <code>
+                      <a name="/s:21CardReaderProviderApi11CommandTypeP2neSiSgvp"></a>
+                      <a name="//apple_ref/swift/Property/ne" class="dashAnchor"></a>
+                      <a class="token" href="#/s:21CardReaderProviderApi11CommandTypeP2neSiSgvp">ne</a>
+                      </code>
+                    </div>
+                    <div class="height-container">
+                      <div class="pointer-container"></div>
+                      <section class="section">
+                        <div class="pointer"></div>
+                        <div class="abstract">
+                          <p>Returns the maximum number of expected data bytes in a response APDU (Ne/Le).
+0 = unlimited/unknown, nil = no output expected</p>
+
+                        </div>
+                        <div class="declaration">
+                          <h4>Declaration</h4>
+                          <div class="language">
+                            <p class="aside-title">Swift</p>
+                            <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">ne</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                          </div>
+                        </div>
+                      </section>
+                    </div>
+                  </li>
+                  <li class="item">
+                    <div>
+                      <code>
+                      <a name="/s:21CardReaderProviderApi11CommandTypeP2ncSivp"></a>
+                      <a name="//apple_ref/swift/Property/nc" class="dashAnchor"></a>
+                      <a class="token" href="#/s:21CardReaderProviderApi11CommandTypeP2ncSivp">nc</a>
+                      </code>
+                    </div>
+                    <div class="height-container">
+                      <div class="pointer-container"></div>
+                      <section class="section">
+                        <div class="pointer"></div>
+                        <div class="abstract">
+                          <p>Returns the number of data bytes in the command body (Nc) or 0 if this APDU has no body.
+This call should be equivalent to <code>self.data.count</code>.</p>
+
+                        </div>
+                        <div class="declaration">
+                          <h4>Declaration</h4>
+                          <div class="language">
+                            <p class="aside-title">Swift</p>
+                            <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">nc</span><span class="p">:</span> <span class="kt">Int</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                          </div>
+                        </div>
+                      </section>
+                    </div>
+                  </li>
+                  <li class="item">
+                    <div>
+                      <code>
+                      <a name="/s:21CardReaderProviderApi11CommandTypeP3clas5UInt8Vvp"></a>
+                      <a name="//apple_ref/swift/Property/cla" class="dashAnchor"></a>
+                      <a class="token" href="#/s:21CardReaderProviderApi11CommandTypeP3clas5UInt8Vvp">cla</a>
+                      </code>
+                    </div>
+                    <div class="height-container">
+                      <div class="pointer-container"></div>
+                      <section class="section">
+                        <div class="pointer"></div>
+                        <div class="abstract">
+                          <p>Returns the value of the class byte CLA.</p>
+
+                        </div>
+                        <div class="declaration">
+                          <h4>Declaration</h4>
+                          <div class="language">
+                            <p class="aside-title">Swift</p>
+                            <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">cla</span><span class="p">:</span> <span class="kt">UInt8</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                          </div>
+                        </div>
+                      </section>
+                    </div>
+                  </li>
+                  <li class="item">
+                    <div>
+                      <code>
+                      <a name="/s:21CardReaderProviderApi11CommandTypeP3inss5UInt8Vvp"></a>
+                      <a name="//apple_ref/swift/Property/ins" class="dashAnchor"></a>
+                      <a class="token" href="#/s:21CardReaderProviderApi11CommandTypeP3inss5UInt8Vvp">ins</a>
+                      </code>
+                    </div>
+                    <div class="height-container">
+                      <div class="pointer-container"></div>
+                      <section class="section">
+                        <div class="pointer"></div>
+                        <div class="abstract">
+                          <p>Returns the value of the instruction byte INS.</p>
+
+                        </div>
+                        <div class="declaration">
+                          <h4>Declaration</h4>
+                          <div class="language">
+                            <p class="aside-title">Swift</p>
+                            <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">ins</span><span class="p">:</span> <span class="kt">UInt8</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                          </div>
+                        </div>
+                      </section>
+                    </div>
+                  </li>
+                  <li class="item">
+                    <div>
+                      <code>
+                      <a name="/s:21CardReaderProviderApi11CommandTypeP2p1s5UInt8Vvp"></a>
+                      <a name="//apple_ref/swift/Property/p1" class="dashAnchor"></a>
+                      <a class="token" href="#/s:21CardReaderProviderApi11CommandTypeP2p1s5UInt8Vvp">p1</a>
+                      </code>
+                    </div>
+                    <div class="height-container">
+                      <div class="pointer-container"></div>
+                      <section class="section">
+                        <div class="pointer"></div>
+                        <div class="abstract">
+                          <p>Returns the value of the parameter byte P1.</p>
+
+                        </div>
+                        <div class="declaration">
+                          <h4>Declaration</h4>
+                          <div class="language">
+                            <p class="aside-title">Swift</p>
+                            <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">p1</span><span class="p">:</span> <span class="kt">UInt8</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                          </div>
+                        </div>
+                      </section>
+                    </div>
+                  </li>
+                  <li class="item">
+                    <div>
+                      <code>
+                      <a name="/s:21CardReaderProviderApi11CommandTypeP2p2s5UInt8Vvp"></a>
+                      <a name="//apple_ref/swift/Property/p2" class="dashAnchor"></a>
+                      <a class="token" href="#/s:21CardReaderProviderApi11CommandTypeP2p2s5UInt8Vvp">p2</a>
+                      </code>
+                    </div>
+                    <div class="height-container">
+                      <div class="pointer-container"></div>
+                      <section class="section">
+                        <div class="pointer"></div>
+                        <div class="abstract">
+                          <p>Returns the value of the parameter byte P2.</p>
+
+                        </div>
+                        <div class="declaration">
+                          <h4>Declaration</h4>
+                          <div class="language">
+                            <p class="aside-title">Swift</p>
+                            <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">p2</span><span class="p">:</span> <span class="kt">UInt8</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                          </div>
+                        </div>
+                      </section>
+                    </div>
+                  </li>
+                  <li class="item">
+                    <div>
+                      <code>
+                      <a name="/s:21CardReaderProviderApi11CommandTypeP5bytes10Foundation4DataVvp"></a>
+                      <a name="//apple_ref/swift/Property/bytes" class="dashAnchor"></a>
+                      <a class="token" href="#/s:21CardReaderProviderApi11CommandTypeP5bytes10Foundation4DataVvp">bytes</a>
+                      </code>
+                    </div>
+                    <div class="height-container">
+                      <div class="pointer-container"></div>
+                      <section class="section">
+                        <div class="pointer"></div>
+                        <div class="abstract">
+                          <p>Serialized APDU message</p>
+
+                        </div>
+                        <div class="declaration">
+                          <h4>Declaration</h4>
+                          <div class="language">
+                            <p class="aside-title">Swift</p>
+                            <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">bytes</span><span class="p">:</span> <span class="kt">Data</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                          </div>
+                        </div>
+                      </section>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="task-group">
+                <ul>
+                  <li class="item">
+                    <div>
+                      <code>
+                      <a name="/s:21CardReaderProviderApi11CommandTypePAAE16toLogicalChannel9channelNoAaB_ps5UInt8V_tKF"></a>
+                      <a name="//apple_ref/swift/Method/toLogicalChannel(channelNo:)" class="dashAnchor"></a>
+                      <a class="token" href="#/s:21CardReaderProviderApi11CommandTypePAAE16toLogicalChannel9channelNoAaB_ps5UInt8V_tKF">toLogicalChannel(channelNo:)</a>
+                      </code>
+                        <span class="declaration-note">
+                          Extension method
+                        </span>
+                    </div>
+                    <div class="height-container">
+                      <div class="pointer-container"></div>
+                      <section class="section">
+                        <div class="pointer"></div>
+                        <div class="abstract">
+                          <p>Convert a Command to be send on a given channel No</p>
+<div class="aside aside-throws">
+    <p class="aside-title">Throws</p>
+    <code><a href="../Enums/CardError.html">CardError</a></code> or <code><a href="../Classes/APDU/Error.html">APDU.Error</a></code>
+
+</div>
+
+                        </div>
+                        <div class="declaration">
+                          <h4>Declaration</h4>
+                          <div class="language">
+                            <p class="aside-title">Swift</p>
+                            <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">toLogicalChannel</span><span class="p">(</span><span class="nv">channelNo</span><span class="p">:</span> <span class="kt">UInt8</span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt">CommandType</span></code></pre>
+
+                          </div>
+                        </div>
+                        <div>
+                          <h4>Parameters</h4>
+                          <table class="graybox">
+                            <tbody>
+                              <tr>
+                                <td>
+                                  <code>
+                                  <em>channelNo</em>
+                                  </code>
+                                </td>
+                                <td>
+                                  <div>
+                                    <p>The channel number. Must be &lt; 20.</p>
+                                  </div>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                        <div>
+                          <h4>Return Value</h4>
+                          <p>Command for channel</p>
+                        </div>
+                      </section>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </section>
+          </section>
+        </article>
+      </div>
+      <div class="nav-wrapper">
+        <nav class="nav-bottom">
+          <ul class="nav-groups">
+            <li class="nav-group-name">
+              <a href="../Classes.html">Classes</a>
+              <ul class="nav-group-tasks">
+                <li class="nav-group-task">
+                  <a href="../Classes/APDU.html">APDU</a>
+                </li>
+                <li class="nav-group-task">
+                  <a href="../Classes/APDU/Error.html">– Error</a>
+                </li>
+                <li class="nav-group-task">
+                  <a href="../Classes/APDU/Response.html">– Response</a>
+                </li>
+                <li class="nav-group-task">
+                  <a href="../Classes/APDU/Command.html">– Command</a>
+                </li>
+                <li class="nav-group-task">
+                  <a href="../Classes/CardReaderControllerObjcWrapper.html">CardReaderControllerObjcWrapper</a>
+                </li>
+                <li class="nav-group-task">
+                  <a href="../Classes/ProviderDescriptor.html">ProviderDescriptor</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-group-name">
+              <a href="../Enums.html">Enumerations</a>
+              <ul class="nav-group-tasks">
+                <li class="nav-group-task">
+                  <a href="../Enums/CardError.html">CardError</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-group-name">
+              <a href="../Functions.html">Functions</a>
+              <ul class="nav-group-tasks">
+                <li class="nav-group-task">
+                  <a href="../Functions.html#/s:21CardReaderProviderApi2eeoiySbAA11CommandType_p_AaC_ptF">==(_:_:)</a>
+                </li>
+                <li class="nav-group-task">
+                  <a href="../Functions.html#/s:21CardReaderProviderApi2eeoiySbAA12ResponseType_p_AaC_ptF">==(_:_:)</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-group-name">
+              <a href="../Protocols.html">Protocols</a>
+              <ul class="nav-group-tasks">
+                <li class="nav-group-task">
+                  <a href="../Protocols/CardChannelType.html">CardChannelType</a>
+                </li>
+                <li class="nav-group-task">
+                  <a href="../Protocols/CardReaderControllerDelegate.html">CardReaderControllerDelegate</a>
+                </li>
+                <li class="nav-group-task">
+                  <a href="../Protocols/CardReaderControllerType.html">CardReaderControllerType</a>
+                </li>
+                <li class="nav-group-task">
+                  <a href="../Protocols/CardReaderProviderType.html">CardReaderProviderType</a>
+                </li>
+                <li class="nav-group-task">
+                  <a href="../Protocols/CardReaderType.html">CardReaderType</a>
+                </li>
+                <li class="nav-group-task">
+                  <a href="../Protocols/CardType.html">CardType</a>
+                </li>
+                <li class="nav-group-task">
+                  <a href="../Protocols/CommandType.html">CommandType</a>
+                </li>
+                <li class="nav-group-task">
+                  <a href="../Protocols/ProviderDescriptorType.html">ProviderDescriptorType</a>
+                </li>
+                <li class="nav-group-task">
+                  <a href="../Protocols/ResponseType.html">ResponseType</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-group-name">
+              <a href="../Structs.html">Structures</a>
+              <ul class="nav-group-tasks">
+                <li class="nav-group-task">
+                  <a href="../Structs/CardProtocol.html">CardProtocol</a>
+                </li>
+                <li class="nav-group-task">
+                  <a href="../Structs/InvalidCommandChannel.html">InvalidCommandChannel</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-group-name">
+              <a href="../Typealiases.html">Type Aliases</a>
+              <ul class="nav-group-tasks">
+                <li class="nav-group-task">
+                  <a href="../Typealiases.html#/s:21CardReaderProviderApi3ATRa">ATR</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="footer-wrapper">
+        <section id="footer">
+          <p>&copy; 2020 <a class="link" href="http://www.gematik.de" target="_blank" rel="external">gematik GmbH</a>. All rights reserved. (Last updated: 2020-01-21)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.11.2</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </div>
+    </div>
+  </body>
+</div>
+</html>
